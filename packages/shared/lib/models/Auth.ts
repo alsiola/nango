@@ -30,7 +30,7 @@ export interface OAuthSession {
     id: string;
     connectionConfig: Record<string, string>;
     environmentId: number;
-    webSocketClientId: string | undefined;
+    webSocketClientId: string | undefined; //TODO: rename field to 'channel'
 
     // Needed for OAuth 2.0 PKCE
     codeVerifier: string;
