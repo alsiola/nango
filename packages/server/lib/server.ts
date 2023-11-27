@@ -68,7 +68,7 @@ if (NANGO_MIGRATE_AT_START === 'true') {
 await environmentService.cacheSecrets();
 await oAuthSessionService.clearStaleSessions();
 
-// API routes (no/public auth).
+// API routes (no/public auth). Test.
 app.get('/health', (_, res) => {
     res.status(200).send({ result: 'ok' });
 });
